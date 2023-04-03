@@ -46,7 +46,6 @@ public class LibraryController implements Initializable {
 
     @FXML
     void addBook(ActionEvent event) {
-        int x;
         String title = titleField.getText();
         String author = authorField.getText();
         double price = Double.parseDouble(priceField.getText());
@@ -54,8 +53,19 @@ public class LibraryController implements Initializable {
         book.setAuthor(author);
         book.setPrice(price);
         library.addBook(book);
-        //x = library.length;
         items.add(book.toString());
+    }
+
+    @FXML
+    void showBook(ActionEvent event){
+        int x = bookList.getSelectionModel().getSelectedIndex();
+        Book z = library.getBook(x);
+        String titleText = z.getTitle();
+        String authorName = z.getAuthor();
+        Double priceText = z.getPrice();
+        titleLabel.setText(titleText);
+        authorLabel.setText(authorName);
+        priceLabel.setText("$" + priceText);
     }
 
     @Override

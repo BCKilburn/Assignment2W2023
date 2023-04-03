@@ -1,11 +1,11 @@
 package com.example.assignment2w2023;
 
-import javafx.scene.image.Image;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Library {
+
+    int index;
     private ArrayList<Book> library;
 
     public Library() {
@@ -20,4 +20,7 @@ public class Library {
         return library;
     }
 
+    public Book getBook(int index){
+        return library.get(index);
+    }
 }

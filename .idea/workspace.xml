@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c038367-3c5f-4e03-b9f2-cfd4ce3eccb3" name="Changes" comment="initialize generates 3 book objects">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/assignment2w2023/images/dunwichHorror.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/assignment2w2023/images/manAfterMan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/assignment2w2023/images/placeholder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/assignment2w2023/images/shadowInnsmouth.png" afterDir="false" />
+    <list default="true" id="8c038367-3c5f-4e03-b9f2-cfd4ce3eccb3" name="Changes" comment="books can be added to listView">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/LibraryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/assignment2w2023/library-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/assignment2w2023/library-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680492987679</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="books can be added to listView">
+      <created>1680499411271</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680499411271</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -100,6 +101,7 @@
     <MESSAGE value="Library class" />
     <MESSAGE value="MVC + addBook btn" />
     <MESSAGE value="initialize generates 3 book objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialize generates 3 book objects" />
+    <MESSAGE value="books can be added to listView" />
+    <option name="LAST_COMMIT_MESSAGE" value="books can be added to listView" />
   </component>
 </project>
