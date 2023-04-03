@@ -24,7 +24,7 @@ public class Book {
         this.image = image;
     }
 
-    public String getTitle() {
+    protected String getTitle() {
         return title;
     }
 

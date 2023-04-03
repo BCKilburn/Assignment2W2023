@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c038367-3c5f-4e03-b9f2-cfd4ce3eccb3" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/Book.java" afterDir="false" />
+    <list default="true" id="8c038367-3c5f-4e03-b9f2-cfd4ce3eccb3" name="Changes" comment="Book class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/LibraryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/assignment2w2023/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/assignment2w2023/library-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/assignment2w2023/Book.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,10 +56,19 @@
       <option name="presentableId" value="Default" />
       <updated>1680482251623</updated>
     </task>
+    <task id="LOCAL-00001" summary="Book class">
+      <created>1680484888458</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680484888458</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Book class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Book class" />
   </component>
 </project>
