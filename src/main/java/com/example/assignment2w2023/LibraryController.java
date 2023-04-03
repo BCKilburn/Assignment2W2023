@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -31,6 +32,9 @@ public class LibraryController implements Initializable {
     private ListView<String> bookList;
 
     private ObservableList<String> items = FXCollections.observableArrayList();
+
+    @FXML
+    private ImageView display;
 
     @FXML
     private TextField priceField;
@@ -91,6 +95,11 @@ public class LibraryController implements Initializable {
         library.addBook(book);
         items.add(book.toString());
         bookList.setItems(items);
+        titleLabel.setText(book.getTitle());
+        authorLabel.setText(book.getAuthor());
+        priceLabel.setText("$" + book.getPrice());
+        display.setImage(book.getImage());
+
 
     }
 }
