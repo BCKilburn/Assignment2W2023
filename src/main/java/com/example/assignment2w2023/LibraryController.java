@@ -49,6 +49,22 @@ public class LibraryController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        //set up an initial 3 books
+        book.setImage(new Image(Book.class.getResourceAsStream("manAfterMan.png")));
+        book.setTitle("Man After Man");
+        book.setAuthor("Dougal Dixon");
+        book.setPrice(55.78);
+        library.addBook(book);
+        book.setImage(new Image(Book.class.getResourceAsStream("dunwichHorror")));
+        book.setTitle("The Dunwich Horror");
+        book.setAuthor("H.P. Lovecraft");
+        book.setPrice(10.43);
+        library.addBook(book);
+        book.setImage(new Image(Book.class.getResourceAsStream("shadowInnsmouth")));
+        book.setTitle("The Shadow Over Innsmouth");
+        book.setAuthor("H.P. Lovecraft");
+        book.setPrice(12.58);
+        library.addBook(book);
 
     }
 }
