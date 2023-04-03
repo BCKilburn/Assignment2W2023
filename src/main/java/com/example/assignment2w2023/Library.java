@@ -1,14 +1,15 @@
 package com.example.assignment2w2023;
 
+import javafx.scene.image.Image;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Library {
-    int index;
     private ArrayList<Book> library;
 
-    public Library(ArrayList<Book> library) {
-        library = new ArrayList<Book>();
+    public Library() {
+        library = new ArrayList<>();
     }
 
     public void addBook(Book book){
