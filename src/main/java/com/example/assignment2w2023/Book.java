@@ -32,7 +32,10 @@ public class Book {
         title = title.trim();
         if(title.length() < 2 || title.charAt(0) == ' '){
             throw new IllegalArgumentException("Title must be more than 2 letters and cannot begin with a blank space.");
+        } else if (title.isBlank()) {
+            throw new IllegalArgumentException("Title field cannot be blank");
         }
+
         this.title = title;
     }
 
@@ -44,6 +47,8 @@ public class Book {
         author = author.trim();
         if(author.length() < 1 || author.charAt(0) == ' '){
             throw new IllegalArgumentException("Author's name must be greater than one letter and not begin with a blank space.");
+        } else if (author.isBlank()) {
+            throw new IllegalArgumentException("Author field cannot be blank");
         }
         this.author = author;
     }
@@ -55,6 +60,8 @@ public class Book {
     public void setPrice(double price) {
         if(price < 0.001 || price > 99999.99){
             throw new IllegalArgumentException("Price is either too low or too high, must be between 0.001 and 99999.99");
+        } else if (Double.isNaN(price)) {
+            throw new IllegalArgumentException("Must be a number");
         }
         this.price = price;
     }

@@ -59,9 +59,30 @@ public class LibraryController implements Initializable {
 
     @FXML
     void addBook(ActionEvent event) {
+        //read data from text fields and put it into a new instance of Book
         String title = titleField.getText();
+        //validation
+        title = title.trim();
+        if(title.length() < 2 || title.charAt(0) == ' '){
+            throw new IllegalArgumentException("Title must be more than 2 letters and cannot begin with a blank space.");
+        } else if (title.isBlank()) {
+            throw new IllegalArgumentException("Title field cannot be blank");
+        }
         String author = authorField.getText();
+        //validation
+        author = author.trim();
+        if(author.length() < 1 || author.charAt(0) == ' '){
+            throw new IllegalArgumentException("Author's name must be greater than one letter and not begin with a blank space.");
+        } else if (author.isBlank()) {
+            throw new IllegalArgumentException("Author field cannot be blank");
+        }
         double price = Double.parseDouble(priceField.getText());
+        //validation
+        if(price < 0.001 || price > 99999.99){
+            throw new IllegalArgumentException("Price is either too low or too high, must be between 0.001 and 99999.99");
+        } else if (Double.isNaN(price)) {
+            throw new IllegalArgumentException("Must be a number");
+        }
         Book book = new Book(new Image(Book.class.getResourceAsStream("images/placeholder.png")), title , author, price);
         String name = "book" + count;
         listOfBooks.put(name, book);
@@ -88,18 +109,23 @@ public class LibraryController implements Initializable {
         library.addBook(book2);
         items.add(book2.toString());
         System.out.println(items);
+        bookList.getSelectionModel().select(0);
+        titleLabel.setText(book0.getTitle());
+        authorLabel.setText(book0.getAuthor());
+        priceLabel.setText("$" + book0.getPrice());
+        display.setImage(book0.getImage());
+
+        //Listview
         bookList.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) ->{
             if(newValue != null){
                 int selectedBook = bookList.getSelectionModel().getSelectedIndex();
                 Book z = library.getBook(selectedBook);
                 System.out.println(library.getBook(selectedBook));
                 System.out.println(selectedBook);
-                String titleText = z.getTitle();
-                String authorName = z.getAuthor();
                 Double priceText = z.getPrice();
                 display.setImage(z.getImage());
-                titleLabel.setText(titleText);
-                authorLabel.setText(authorName);
+                titleLabel.setText(z.getTitle());
+                authorLabel.setText(z.getAuthor());
                 priceLabel.setText("$" + priceText);
 
             }

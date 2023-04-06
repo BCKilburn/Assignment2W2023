@@ -11,10 +11,12 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2w2023.LibraryController">
    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d3eaff" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
       <VBox alignment="CENTER" layoutX="414.0" layoutY="77.0" prefHeight="256.0" prefWidth="164.0">
          <children>
             <Label text="Add New Book" />
@@ -64,5 +66,10 @@
          </children>
       </VBox>
       <ListView fx:id="bookList" layoutX="14.0" layoutY="47.0" prefHeight="299.0" prefWidth="164.0" />
+      <Label alignment="CENTER" layoutX="203.0" layoutY="19.0" prefHeight="56.0" prefWidth="194.0" text="Braden's Library">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
