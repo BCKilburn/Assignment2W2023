@@ -6,6 +6,7 @@ import java.util.List;
 public class Library {
 
     int index;
+    String output;
     private ArrayList<Book> library;
 
     public Library() {
